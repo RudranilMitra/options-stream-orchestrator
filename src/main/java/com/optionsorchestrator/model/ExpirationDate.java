@@ -1,15 +1,15 @@
-package com.optionsorchestrator.config.model;
+package com.optionsorchestrator.model;
 
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.LinkedHashMap;
 
 @Builder
 @Getter
 @Setter
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class ExpirationDate {
     private LinkedHashMap<String,StrikePrice> strikePriceKey;
 }

@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Properties;
 
 @Configuration
-public class KafkaConfig {
+public class KafkaStreamConfig {
     private Properties streamsConfiguration;
 
-    public KafkaConfig() {
+    public KafkaStreamConfig() {
         streamsConfiguration = new Properties();
         streamsConfiguration.putIfAbsent(StreamsConfig.APPLICATION_ID_CONFIG, "option-event-orchestator");
         streamsConfiguration.putIfAbsent(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "10.0.0.237:9092,10.0.0.237:9093,10.0.0.237:9094");

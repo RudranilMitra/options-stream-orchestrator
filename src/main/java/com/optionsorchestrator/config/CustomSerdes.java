@@ -1,6 +1,6 @@
 package com.optionsorchestrator.config;
 
-import com.optionsorchestrator.config.model.OptionEvent;
+import com.optionsorchestrator.model.OptionEvent;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.springframework.kafka.support.serializer.JsonSerializer;

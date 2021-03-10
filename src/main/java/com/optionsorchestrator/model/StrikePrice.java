@@ -1,9 +1,7 @@
-package com.optionsorchestrator.config.model;
+package com.optionsorchestrator.model;
 
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -11,6 +9,8 @@ import java.math.BigInteger;
 @Builder
 @Getter
 @Setter
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class StrikePrice {
 //    private String tickerSymbol;
 //    private String status;

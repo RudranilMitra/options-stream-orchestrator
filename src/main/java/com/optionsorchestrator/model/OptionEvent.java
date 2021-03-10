@@ -1,8 +1,6 @@
-package com.optionsorchestrator.config.model;
+package com.optionsorchestrator.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -10,6 +8,8 @@ import java.util.List;
 @Builder
 @Getter
 @Setter
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class OptionEvent {
     private String symbol;
     private String status;
